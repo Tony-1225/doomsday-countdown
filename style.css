@@ -47,3 +47,9 @@ footer>a{display:inline-flex;align-items:center}
  }
  .haze{background:radial-gradient(ellipse at 50% 35%,#3e683e26,transparent 65%);animation:none}
 }
+/* Keep promotional lettering in the background from competing with the UI. */
+.backdrop{opacity:.2}
+@media(max-width:760px) and (orientation:portrait){
+ .backdrop{opacity:.15;background-image:linear-gradient(180deg,rgba(3,9,6,.55) 0%,rgba(3,9,6,.85) 30%,#050a07 75%),url('assets/hero.jpg')}
+ .haze{opacity:.3}
+}
